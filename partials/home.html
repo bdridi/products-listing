@@ -1,0 +1,21 @@
+<div class="home">
+  
+<input ng-model="key" class="search" placeholder="Type to search items"/>
+
+<ul ng-show="key.length">
+	
+ <li ng-repeat="item in liste | filter : key">
+   
+    <a href="#/details/{{item._id}}" >	
+    <span class="item">
+  	{{item.name}} 
+  	</span>
+		</a> 
+		<button id="{{item._id}}" ng-click="addItem(item._id,item.name,item.price)" >+</button>
+
+ </li>
+	
+
+</ul>
+</div>
+

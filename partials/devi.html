@@ -1,0 +1,21 @@
+<div class="quotation">
+<h3> Quotation of Choosed items </h3>
+
+<table class="quotation_table">
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th> action </th>
+</tr>
+<tr ng-repeat="selected in devi">
+	<td>{{selected.name}}</td>
+	<td>${{selected.price}} </td>
+	<td><a href="" ng-click="remove(selected.id)">X</a>
+</tr>
+
+
+</table>
+<button ng-click="reset()" >Reset devi </button>
+
+<h4>Total : ${{total}}</h4> 
+</diV>

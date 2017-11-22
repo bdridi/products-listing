@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  
+  
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<title> AngularJS Live Search  </title>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+
+<script src="app.js"></script>
+<script src="controllers.js"></script>
+<script src="services.js"></script>
+
+</head>
+<body ng-app="project">
+  <nav>
+   <a href="#/home" class="btn btn-primary">Home</a>
+   <a href="#/help" class="btn btn-success">Help</a>
+   <a href="#/devi" class="btn btn-success">Quotation</a>
+  </nav>
+<div class="header"> 
+
+  <h1><span class="title_part1">Products</span><span class="title_part2">#List </span> </h1>
+
+</div>
+
+<div ng-view></div>
+
+
+</body>
+</html>
